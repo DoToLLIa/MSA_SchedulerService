@@ -1,8 +1,8 @@
 FROM maven:3.6.3-jdk-8
 ARG PROJECT_VERSION=0.1
-RUN mkdir /MSA_BankAccountGenerator
-COPY . /MSA_BankAccountGenerator
-RUN cd /MSA_BankAccountGenerator && \
+RUN mkdir /SchedulerService
+COPY . /MSA_SchedulerService
+RUN cd /MSA_SchedulerService && \
     mvn clean package &&  \
     mv /MSA_SchedulerService/target/SchedulerService-${PROJECT_VERSION}.jar /SchedulerService.jar && \
     rm -r /MSA_SchedulerService
