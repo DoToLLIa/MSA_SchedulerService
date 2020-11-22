@@ -8,8 +8,8 @@ import org.springframework.web.client.RestTemplate;
 public class SchedulerController {
     private static final Long INTERVAL = 5000L;
 
-    private static final String HOST = "bankAccountGenerator";
-    private static final String PORT = "8085";
+    private static final String HOST = "10.20.30.10";
+    private static final String PORT = "8080";
     private static final String PATH = "";
 
     @Scheduled(fixedRate = 5000)
