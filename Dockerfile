@@ -1,5 +1,5 @@
-FROM maven:3.6.3-jdk-8
-ARG PROJECT_VERSION=0.1
+FROM dotollia/msa_basedockerimage:0.2
+ARG PROJECT_VERSION=0.2
 RUN mkdir /SchedulerService
 COPY . /MSA_SchedulerService
 RUN cd /MSA_SchedulerService && \
