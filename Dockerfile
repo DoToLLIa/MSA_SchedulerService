@@ -1,5 +1,5 @@
-FROM dotollia/msa_basedockerimage:0.2
-ARG PROJECT_VERSION=0.2
+FROM dotollia/msa_basedockerimage:0.3
+ARG PROJECT_VERSION=0.3
 RUN mkdir /SchedulerService
 COPY . /MSA_SchedulerService
 RUN cd /MSA_SchedulerService && \
